@@ -56,7 +56,7 @@ terraform-ec2-strapi/
 In this project, I did not create SSH keys manually.
 Instead, Terraform generates and manages the key pair.
 
-🔹 What Happens
+### What Happens
 Terraform generates a private key locally
 
 Terraform uploads the public key to AWS as an EC2 key pair
@@ -67,7 +67,7 @@ The EC2 instance is launched using this key pair
 
 Terraform uses the same private key to SSH into EC2 for provisioning
 
-🔹Where It Is Used
+### Where It Is Used
 
 key_name = aws_key_pair.create_key.key_name
 This ensures the EC2 instance is accessible only using the generated private key.
@@ -75,7 +75,7 @@ This ensures the EC2 instance is accessible only using the generated private key
  Security Group Configuration
 The Security Group acts as a virtual firewall for the EC2 instance.
 
-🔹 Opened Ports
+### Opened Ports
 Port	Purpose
 22	SSH access
 80	HTTP
@@ -83,10 +83,10 @@ Port	Purpose
 1337	Strapi application
 
 
-🔹 Where It Is Used
+### Where It Is Used
 
 vpc_security_group_ids = [aws_security_group.security_group.id]
-☁️ EC2 Provisioning (main.tf)
+ EC2 Provisioning (main.tf)
 Terraform is used to launch the EC2 instance and attach the Security Group and Key Pair.
 
 
@@ -110,7 +110,7 @@ Application setup is automated on the EC2 instance
 Strapi is deployed and exposed on port 1337
 
 ## Commands Used
-🔹 Terraform
+### Terraform
 
 ```bash
 Copy code
@@ -120,7 +120,7 @@ terraform plan
 terraform apply
 ```
 
-🔹 SSH Access
+### SSH Access
 ```bash
 Copy code
 chmod 400 <key-name>.pem
