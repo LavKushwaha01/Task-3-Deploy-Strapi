@@ -18,7 +18,7 @@ The main goal of this project:
 
 ---
 
-## 🧱 High-Level Architecture
+## High-Level Architecture
 
 Local Machine
 |
@@ -37,7 +37,7 @@ AWS Account
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 terraform-ec2-strapi/
@@ -127,7 +127,7 @@ chmod 400 <key-name>.pem
 ssh -i <key-name>.pem ec2-user@<EC2_PUBLIC_IP>
 ```
 
-## 🧠 What I Learned
+##  What I Learned
 Real-world Terraform workflows
 
 AWS networking and security concepts
@@ -139,7 +139,7 @@ Debugging provisioning issues (SSH, cloud-init, package managers)
 End-to-end cloud deployment from scratch
 
 
-### 📌 Conclusion
+###  Conclusion
 This project showcases a complete AWS + Terraform workflow.
 It demonstrates my understanding of cloud infrastructure, security basics, automation, and practical DevOps workflows.
 
