@@ -1,5 +1,6 @@
 # AWS EC2 Provisioning & Strapi Deployment using Terraform
 
+## Loom video: https://www.loom.com/share/6f50f9f3592a4b3996ea52e4539ee6ba
 
 Project Summary:- 
 
